@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Curl - Fashion Designer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://coolors.co/palette-widget/widget.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/pc-logo.png" alt="Purple Curl Logo">
+            </div>
+            <div class="nav-icons">
+                <a href="#search" class="search-icon"><i class="fas fa-search"></i> Search</a>
+                <a href="#favorites"><i class="fas fa-heart"></i> Favorites</a>
+                <a href="#cart"><i class="fas fa-shopping-bag"></i> Shopping bag (0)</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="video-background">
+            <div class="video-grid">
+                <div class="video-frame">
+                    <div class="video-wrapper active">
+                        <video autoplay muted loop playsinline preload="auto" class="hero-video">
+                            <source src="videos/hero-bg.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <video autoplay muted loop playsinline preload="auto" class="hero-video">
+                            <source src="videos/hero-bg.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="video-frame">
+                    <div class="video-wrapper active">
+                        <video autoplay muted loop playsinline preload="auto" class="hero-video">
+                            <source src="videos/hero-bg-2.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <video autoplay muted loop playsinline preload="auto" class="hero-video">
+                            <source src="videos/hero-bg-2.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="video-frame">
+                    <div class="video-wrapper active">
+                        <video autoplay muted loop playsinline preload="auto" class="hero-video">
+                            <source src="videos/hero-bg-3.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <video autoplay muted loop playsinline preload="auto" class="hero-video">
+                            <source src="videos/hero-bg-3.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="video-controls">
+                <button class="prev-video" aria-label="Previous video set">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="next-video" aria-label="Next video set">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="hero-banner">
+            <div class="hero-content">
+                <h1>New Season, New Styles</h1>
+                <p>Spring/Summer Collection 2024</p>
+                <div class="hero-buttons">
+                    <a href="#ladies" class="cta-button">Shop Ladies</a>
+                    <a href="#men" class="cta-button">Shop Men</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="membership-banner">
+        <p>Become a member and get 10% off your first purchase</p>
+        <a href="#join" class="text-link">Join now <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <section id="collection" class="collection">
+        <h2>New Arrivals</h2>
+        <div class="product-scroll-container">
+            <button class="scroll-button prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll-button next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-1.jpeg" alt="Elegant Summer Dress">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Summer Dress</h3>
+                        <div class="price">$129.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #F5E6E0;"></div>
+                            <div class="color-option" style="background-color: #D4B8B3;"></div>
+                            <div class="color-option" style="background-color: #8B7355;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-2.jpeg" alt="Modern Blazer">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Modern Blazer</h3>
+                        <div class="price">$189.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #2C2C2C;"></div>
+                            <div class="color-option" style="background-color: #4A4A4A;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-3.jpeg" alt="Casual Comfort Set">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-badge">Trending</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Casual Comfort Set</h3>
+                        <div class="price">$149.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #E5E5E5;"></div>
+                            <div class="color-option" style="background-color: #B8B8B8;"></div>
+                            <div class="color-option" style="background-color: #7A7A7A;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-4.jpeg" alt="Statement Piece">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-badge">Limited</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Statement Piece</h3>
+                        <div class="price">$169.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #DED1BD;"></div>
+                            <div class="color-option" style="background-color: #B8A99A;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more products using other gallery images -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-5.jpeg" alt="Urban Collection">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Urban Collection</h3>
+                        <div class="price">$159.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #9A8478;"></div>
+                            <div class="color-option" style="background-color: #6B5B50;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-6.jpeg" alt="Designer Series">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Series</h3>
+                        <div class="price">$199.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #C9B8A8;"></div>
+                            <div class="color-option" style="background-color: #8C7B6B;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-7.jpeg" alt="Summer Collection">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Summer Collection</h3>
+                        <div class="price">$179.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #E8D5C4;"></div>
+                            <div class="color-option" style="background-color: #B7A99A;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-8.jpeg" alt="Autumn Essentials">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Autumn Essentials</h3>
+                        <div class="price">$159.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #D2B48C;"></div>
+                            <div class="color-option" style="background-color: #8B7355;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-9.jpeg" alt="Winter Warmth">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-badge">Trending</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Winter Warmth</h3>
+                        <div class="price">$199.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #E5DED6;"></div>
+                            <div class="color-option" style="background-color: #A69B8D;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-10.jpeg" alt="Evening Elegance">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Evening Elegance</h3>
+                        <div class="price">$229.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #C4B5A2;"></div>
+                            <div class="color-option" style="background-color: #8E7F6C;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-11.jpeg" alt="Casual Chic">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-badge">Limited</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Casual Chic</h3>
+                        <div class="price">$149.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #D9CEC1;"></div>
+                            <div class="color-option" style="background-color: #9F8E7A;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-12.jpeg" alt="Modern Classic">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Modern Classic</h3>
+                        <div class="price">$189.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #BFB0A0;"></div>
+                            <div class="color-option" style="background-color: #8C7B6B;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-13.jpeg" alt="Urban Style">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Urban Style</h3>
+                        <div class="price">$169.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #E0D5C5;"></div>
+                            <div class="color-option" style="background-color: #A69682;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-14.jpeg" alt="Weekend Comfort">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Weekend Comfort</h3>
+                        <div class="price">$139.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #D4C5B4;"></div>
+                            <div class="color-option" style="background-color: #9B8C7B;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-15.jpeg" alt="Signature Collection">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-badge">Trending</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Signature Collection</h3>
+                        <div class="price">$219.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #CDBFAE;"></div>
+                            <div class="color-option" style="background-color: #94866F;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-16.jpeg" alt="Timeless Pieces">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Timeless Pieces</h3>
+                        <div class="price">$179.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #E6DCD0;"></div>
+                            <div class="color-option" style="background-color: #AC9F8D;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-17.jpeg" alt="Seasonal Must-Haves">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <div class="product-badge">Limited</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Seasonal Must-Haves</h3>
+                        <div class="price">$159.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #DBD0C3;"></div>
+                            <div class="color-option" style="background-color: #A19584;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/gallery-img-18.jpeg" alt="Designer Edit">
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Edit</h3>
+                        <div class="price">$249.99</div>
+                        <div class="colors">
+                            <div class="color-option" style="background-color: #D8CCBE;"></div>
+                            <div class="color-option" style="background-color: #9E8F7C;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Purple Curl</h2>
+            <p>We are passionate about creating timeless pieces that blend contemporary style with classic elegance. Each design is carefully crafted to ensure the highest quality and perfect fit.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p class="contact-description">Have questions about our collections? Want to collaborate? Or just want to say hello? We'd love to hear from you!</p>
+                
+                <div class="contact-details">
+                    <div class="contact-detail-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9am - 6pm<br>Saturday: 10am - 4pm</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@purplecurl.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-container">
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <a href="#ladies">Ladies</a>
+                <a href="#men">Men</a>
+                <a href="#divided">Divided</a>
+                <a href="#kids">Kids</a>
+                <a href="#sale">Sale</a>
+            </div>
+            <div class="footer-section">
+                <h3>Corporate Info</h3>
+                <a href="#career">Career at Purple Curl</a>
+                <a href="#about">About Purple Curl</a>
+                <a href="#sustainability">Sustainability</a>
+                <a href="#press">Press</a>
+                <a href="#investor-relations">Investor Relations</a>
+            </div>
+            <div class="footer-section">
+                <h3>Help</h3>
+                <a href="#customer-service">Customer Service</a>
+                <a href="#account">My Account</a>
+                <a href="#store">Find a Store</a>
+                <a href="#size-guide">Size Guide</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="footer-section">
+                <h3>Join Purple Curl</h3>
+                <a href="#membership">Become a Member</a>
+                <a href="#newsletter">Sign up for Newsletter</a>
+                <a href="#student-discount">Student Discount</a>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>The content of this site is copyright-protected and is the property of Purple Curl. Purple Curl's business concept is to offer fashion and quality at the best price in a sustainable way. Purple Curl has since it was founded in 2024 grown into one of the world's leading fashion companies.</p>
+            <p>&copy; 2024 Purple Curl. All rights reserved.</p>
+            <p class="attribution"><a href="https://www.vecteezy.com/free-vector/abstract">Abstract Vectors by Vecteezy</a></p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html> 
