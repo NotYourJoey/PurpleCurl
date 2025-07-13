@@ -352,6 +352,177 @@ footer {
     .video-frame:not(:first-child) {
         display: none;
     }
+    
+    .hero {
+        height: 70vh;
+        min-height: 500px;
+    }
+    
+    .hero-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 60vh;
+        min-height: 350px;
+    }
+    
+    .video-background {
+        height: 40vh;
+    }
+    
+    .hero-banner {
+        padding: 1.2rem 0.8rem;
+        height: auto;
+    }
+    
+    .hero-content {
+        padding: 1.2rem 1rem;
+        max-width: 95%;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.1;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.3;
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        gap: 0.8rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .cta-button {
+        width: auto;
+        text-align: center;
+        padding: 0.7rem 1.5rem;
+        min-width: 100px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+        min-height: 300px;
+    }
+    
+    .video-background {
+        height: 35vh;
+    }
+    
+    .hero-banner {
+        padding: 1rem 0.6rem;
+        height: auto;
+    }
+    
+    .hero-content {
+        padding: 1rem 0.8rem;
+        max-width: 98%;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.6rem;
+        line-height: 1.1;
+    }
+    
+    .hero-content p {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+        line-height: 1.3;
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        gap: 0.6rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .cta-button {
+        width: auto;
+        text-align: center;
+        padding: 0.6rem 1.2rem;
+        min-width: 90px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero {
+        height: 45vh;
+        min-height: 250px;
+    }
+    
+    .video-background {
+        height: 30vh;
+    }
+    
+    .hero-banner {
+        padding: 0.8rem 0.4rem;
+        height: auto;
+    }
+    
+    .hero-content {
+        padding: 0.8rem 0.6rem;
+        max-width: 100%;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
+        line-height: 1.1;
+    }
+    
+    .hero-content p {
+        font-size: 0.75rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.3;
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        gap: 0.4rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .cta-button {
+        width: auto;
+        text-align: center;
+        padding: 0.5rem 1rem;
+        min-width: 80px;
+        font-size: 0.75rem;
+    }
 }
 
 /* Video controls positioning */
@@ -478,6 +649,35 @@ footer {
     text-align: center;
     font-size: 1rem;
     color: var(--color-white);
+}
+
+/* Responsive Membership Banner */
+@media (max-width: 768px) {
+    .membership-banner {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .membership-banner {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .membership-banner {
+        padding: 0.7rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .membership-banner {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
 }
 
 .text-link {
@@ -746,9 +946,42 @@ footer {
 }
 
 /* Responsive adjustments */
+@media (max-width: 1200px) {
+    .collection {
+        padding: 5rem 1.5rem;
+    }
+    
+    .collection h2 {
+        font-size: 2.3rem;
+    }
+    
+    .product-card {
+        flex: 0 0 330px;
+    }
+}
+
+@media (max-width: 992px) {
+    .collection {
+        padding: 4rem 1.2rem;
+    }
+    
+    .collection h2 {
+        font-size: 2.1rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .product-card {
+        flex: 0 0 310px;
+    }
+    
+    .product-info {
+        padding: 1.3rem;
+    }
+}
+
 @media (max-width: 768px) {
     .collection {
-        padding: 4rem 1rem;
+        padding: 3rem 1rem;
     }
 
     .product-scroll-container {
@@ -778,22 +1011,122 @@ footer {
     .product-card .price {
         font-size: 1.1rem;
     }
-}
-
-@media (max-width: 480px) {
+    
     .collection h2 {
         font-size: 2rem;
         margin-bottom: 3rem;
     }
+}
+
+@media (max-width: 576px) {
+    .collection {
+        padding: 2.5rem 0.8rem;
+    }
+    
+    .collection h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .product-scroll-container {
+        margin: 0 -0.8rem;
+        padding: 0 0.8rem;
+    }
+    
+    .product-card {
+        flex: 0 0 240px;
+    }
+    
+    /* Reduce image sizes */
+    .product-card .product-image-wrapper {
+        padding-bottom: 110%;
+    }
+    
+    .product-info {
+        padding: 1rem;
+    }
+    
+    .product-card h3 {
+        font-size: 0.9rem;
+    }
+    
+    .product-card .price {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .collection {
+        padding: 2rem 0.5rem;
+    }
+    
+    .collection h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
 
     .product-card {
-        flex: 0 0 260px;
+        flex: 0 0 220px;
     }
 
     .product-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 0;
+    }
+    
+    .product-scroll-container {
+        margin: 0 -0.5rem;
+        padding: 0 0.5rem;
+    }
+    
+    /* Further reduce image sizes */
+    .product-card .product-image-wrapper {
+        padding-bottom: 105%;
+    }
+    
+    .product-info {
+        padding: 0.8rem;
+    }
+    
+    .product-card h3 {
+        font-size: 0.85rem;
+    }
+    
+    .product-card .price {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .collection {
+        padding: 1.5rem 0.4rem;
+    }
+    
+    .collection h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .product-card {
+        flex: 0 0 200px;
+    }
+    
+    /* Smallest image sizes for main collection */
+    .product-card .product-image-wrapper {
+        padding-bottom: 100%;
+    }
+    
+    .product-info {
+        padding: 0.7rem;
+    }
+    
+    .product-card h3 {
+        font-size: 0.8rem;
+    }
+    
+    .product-card .price {
+        font-size: 0.85rem;
     }
 }
 
@@ -855,6 +1188,70 @@ footer {
 
 .about-content p {
     font-size: 1.2rem;
+}
+
+/* Responsive About Section */
+@media (max-width: 768px) {
+    .about {
+        padding: 3rem 1rem;
+        margin: 3rem 0;
+    }
+    
+    .about-content h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        padding: 2.5rem 0.8rem;
+        margin: 2.5rem 0;
+    }
+    
+    .about-content h2 {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 2rem 0.6rem;
+        margin: 2rem 0;
+    }
+    
+    .about-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .about-content p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .about {
+        padding: 1.5rem 0.4rem;
+        margin: 1.5rem 0;
+    }
+    
+    .about-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .about-content p {
+        font-size: 0.9rem;
+    }
 }
 
 /* Contact Section */
@@ -1225,59 +1622,66 @@ footer::after {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .mobile-menu-btn {
-        display: block;
-    }
-
-    .hero-content h1 {
-        font-size: 3rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .contact-grid::before {
-        display: none;
-    }
-    
-    .contact-container {
-        padding: 1.5rem;
-    }
-    
-    .contact-info {
-        text-align: center;
-        padding: 1rem;
-    }
-    
-    .contact-detail-item {
-        justify-content: center;
-    }
-} 
-
-/* Contact Section Responsive Design */
 @media (max-width: 1200px) {
-    .contact {
-        margin: 3rem 1rem;
+    .nav-container {
+        padding: 0 2rem;
     }
-
-    .contact::before {
-        left: -20px;
-        right: -20px;
+    
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    
+    .collection {
+        padding: 4rem 1.5rem;
+    }
+    
+    .shop-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
     }
 }
 
 @media (max-width: 992px) {
+    .nav-container {
+        padding: 0 1.5rem;
+        height: 120px;
+    }
+    
+    .logo img {
+        height: 100px;
+    }
+    
+    .nav-icons {
+        gap: 1.5rem;
+        padding: 0.7rem 1.4rem;
+    }
+    
+    .nav-icons a {
+        font-size: 13px;
+        padding: 0.4rem 0.9rem;
+    }
+    
+    .hero {
+        margin-top: 120px;
+        height: 75vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+    
+    .collection h2 {
+        font-size: 2.2rem;
+    }
+    
+    .product-card {
+        flex: 0 0 320px;
+    }
+    
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -1291,15 +1695,6 @@ footer::after {
     .contact-container {
         justify-self: center;
         max-width: 500px;
-        width: 100%;
-    }
-
-    .contact h2 {
-        font-size: 2.2rem;
-    }
-
-    .contact-info h3 {
-        font-size: 1.8rem;
     }
 }
 
@@ -1357,6 +1752,665 @@ footer::after {
     .video-controls button {
         width: 36px;
         height: 36px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    .collection {
+        padding: 3rem 1rem;
+    }
+    
+    .collection h2 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .product-card {
+        flex: 0 0 300px;
+    }
+    
+    .product-info {
+        padding: 1.2rem;
+    }
+    
+    .product-card h3 {
+        font-size: 1rem;
+    }
+    
+    .product-card .price {
+        font-size: 1.1rem;
+    }
+    
+    .about-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .about-content p {
+        font-size: 1.1rem;
+    }
+    
+    .contact h2 {
+        font-size: 2.2rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.8rem;
+    }
+    
+    .footer-content {
+        gap: 2.5rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-container {
+        padding: 0.7rem;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .nav-icons {
+        width: 95%;
+        padding: 0.6rem 1rem;
+        gap: 1rem;
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-icons::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+    .nav-icons a {
+        font-size: 11px;
+        padding: 0.35rem 0.7rem;
+        flex-shrink: 0;
+    }
+
+    .nav-icons i {
+        font-size: 13px;
+    }
+
+    .hero {
+        margin-top: 160px;
+        height: 60vh;
+        min-height: 400px;
+    }
+
+    .video-controls {
+        bottom: 1rem;
+    }
+
+    .video-controls button {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .hero-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 2rem;
+    }
+    
+    .collection {
+        padding: 2.5rem 0.8rem;
+    }
+    
+    .collection h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .product-scroll-container {
+        margin: 0 -0.8rem;
+        padding: 0 0.8rem;
+    }
+    
+    .product-card {
+        flex: 0 0 280px;
+    }
+    
+    .product-info {
+        padding: 1rem;
+    }
+    
+    .product-card h3 {
+        font-size: 0.95rem;
+    }
+    
+    .product-card .price {
+        font-size: 1rem;
+    }
+    
+    .about {
+        padding: 3rem 1rem;
+        margin: 3rem 0;
+    }
+    
+    .about-content h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-content p {
+        font-size: 1rem;
+    }
+    
+    .contact {
+        margin: 2.5rem 0.8rem;
+    }
+    
+    .contact h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-info {
+        padding: 1.5rem;
+    }
+    
+    .contact-container {
+        padding: 2rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.6rem;
+    }
+    
+    .contact-description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+    
+    .submit-btn {
+        padding: 0.9rem 1.8rem;
+        font-size: 0.95rem;
+        min-width: 160px;
+    }
+    
+    footer {
+        padding: 3rem 1rem 1.5rem;
+        margin-top: 3rem;
+    }
+    
+    .footer-content {
+        gap: 2rem;
+    }
+    
+    .footer-section h3 {
+        font-size: 1rem;
+    }
+    
+    .footer-section a {
+        font-size: 0.9rem;
+    }
+    
+    .social-links a {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 2rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0.6rem;
+    }
+
+    .logo img {
+        height: 65px;
+    }
+
+    .nav-icons {
+        width: 92%;
+        padding: 0.6rem 0.8rem;
+        gap: 0.8rem;
+    }
+
+    .nav-icons:hover {
+        padding: 0.7rem 0.9rem;
+    }
+
+    .nav-icons a {
+        font-size: 11px;
+        padding: 0.35rem 0.6rem;
+    }
+
+    .hero {
+        margin-top: 140px;
+        height: 50vh;
+        min-height: 350px;
+    }
+    
+    .hero-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .collection {
+        padding: 2rem 0.5rem;
+    }
+    
+    .collection h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+    
+    .product-scroll-container {
+        margin: 0 -0.5rem;
+        padding: 0 0.5rem;
+    }
+    
+    .product-card {
+        flex: 0 0 260px;
+    }
+    
+    .product-info {
+        padding: 0.8rem;
+    }
+    
+    .product-card h3 {
+        font-size: 0.9rem;
+    }
+    
+    .product-card .price {
+        font-size: 0.95rem;
+    }
+    
+    .about {
+        padding: 2.5rem 0.8rem;
+        margin: 2.5rem 0;
+    }
+    
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-content p {
+        font-size: 0.95rem;
+    }
+    
+    .contact {
+        margin: 2rem 0.5rem;
+    }
+    
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-info {
+        padding: 1rem;
+    }
+    
+    .contact-container {
+        padding: 1.5rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    .contact-description {
+        font-size: 0.95rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .submit-btn {
+        padding: 0.8rem 1.6rem;
+        font-size: 0.9rem;
+        min-width: 140px;
+    }
+    
+    footer {
+        padding: 2.5rem 0.8rem 1rem;
+        margin-top: 2.5rem;
+    }
+    
+    .footer-content {
+        gap: 1.5rem;
+    }
+    
+    .footer-section h3 {
+        font-size: 0.95rem;
+    }
+    
+    .footer-section a {
+        font-size: 0.85rem;
+    }
+    
+    .social-links a {
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 1.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav-container {
+        padding: 0.5rem;
+    }
+
+    .logo img {
+        height: 55px;
+    }
+
+    .nav-icons {
+        width: 95%;
+        padding: 0.5rem 0.7rem;
+        gap: 0.6rem;
+    }
+
+    .nav-icons:hover {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .nav-icons a {
+        font-size: 10px;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .nav-icons i {
+        font-size: 12px;
+    }
+
+    /* Adjust hero section margin for smallest screens */
+    .hero {
+        margin-top: 120px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+    
+    .collection h2 {
+        font-size: 1.4rem;
+    }
+    
+    .product-card {
+        flex: 0 0 240px;
+    }
+    
+    .about-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .contact h2 {
+        font-size: 1.6rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.2rem;
+    }
+} 
+
+/* Contact Section Responsive Design */
+@media (max-width: 1200px) {
+    .contact {
+        margin: 3rem 1rem;
+    }
+
+    .contact::before {
+        left: -20px;
+        right: -20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .contact-grid::before {
+        display: none;
+    }
+    
+    .contact-info,
+    .contact-container {
+        justify-self: center;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .contact h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        margin: 2.5rem 1rem;
+    }
+    
+    .contact h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-info {
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .contact-container {
+        padding: 2rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.6rem;
+    }
+    
+    .contact-description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-detail-item {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        margin: 2rem 0.8rem;
+    }
+    
+    .contact h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-info {
+        padding: 1.2rem;
+    }
+    
+    .contact-container {
+        padding: 1.8rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    .contact-description {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+    
+    .submit-btn {
+        padding: 0.9rem 1.8rem;
+        font-size: 0.95rem;
+        min-width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        margin: 1.5rem 0.5rem;
+    }
+    
+    .contact::before {
+        left: -5px;
+        right: -5px;
+        border-radius: 20px;
+    }
+    
+    .contact h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .contact-info {
+        padding: 1rem;
+    }
+    
+    .contact-container {
+        padding: 1.5rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .contact-description {
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .submit-btn {
+        padding: 0.8rem 1.6rem;
+        font-size: 0.9rem;
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 360px) {
+    .contact {
+        margin: 1rem 0.3rem;
+    }
+    
+    .contact h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-info {
+        padding: 0.8rem;
+    }
+    
+    .contact-container {
+        padding: 1.2rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-description {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.7rem;
+        font-size: 0.85rem;
+    }
+    
+    .submit-btn {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.85rem;
+        min-width: 120px;
     }
 }
 
@@ -1569,6 +2623,28 @@ footer::after {
     }
 }
 
+@media (max-width: 1200px) {
+    footer {
+        padding: 4.5rem 2rem 2rem;
+        margin-top: 5rem;
+    }
+    
+    .footer-content {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    footer {
+        padding: 4rem 1.5rem 2rem;
+        margin-top: 4.5rem;
+    }
+    
+    .footer-content {
+        gap: 2.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     footer {
         padding: 4rem 1.5rem 2rem;
@@ -1594,6 +2670,36 @@ footer::after {
 
     .footer-bottom {
         margin-top: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        padding: 3.5rem 1.2rem 1.8rem;
+        margin-top: 3.5rem;
+    }
+    
+    .footer-content {
+        gap: 2.2rem;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.05rem;
+    }
+    
+    .footer-section a {
+        font-size: 0.95rem;
+    }
+    
+    .social-links a {
+        width: 38px;
+        height: 38px;
+        font-size: 1.3rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 2.5rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -1625,56 +2731,94 @@ footer::after {
         margin-top: 2rem;
         font-size: 0.85rem;
     }
+}
+
+@media (max-width: 360px) {
+    footer {
+        padding: 2.5rem 0.8rem 1.2rem;
+        margin-top: 2.5rem;
+    }
+    
+    .footer-content {
+        gap: 1.5rem;
+    }
+    
+    .footer-section h3 {
+        font-size: 0.95rem;
+    }
+    
+    .footer-section a {
+        font-size: 0.85rem;
+    }
+    
+    .social-links a {
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+    }
+    
+    .footer-bottom {
+        margin-top: 1.5rem;
+        font-size: 0.8rem;
+    }
 } 
 
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
     .hero {
-        height: 100vh;
+        height: 80vh;
         margin-top: 120px;
         display: flex;
         flex-direction: column;
     }
 
     .video-background {
-        height: 60vh; /* Reduced height for video */
-        position: relative; /* Changed from absolute */
+        height: 50vh;
+        position: relative;
     }
 
     .hero-banner {
         height: auto;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
         background: var(--color-purple-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-content {
-        padding: 2rem;
+        padding: 1.5rem 1.5rem;
         margin: 0;
         width: 100%;
         max-width: 100%;
-        background: none;
-        backdrop-filter: none;
-        border: none;
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
     }
 
     .hero-content h1 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         margin-bottom: 1rem;
+        line-height: 1.1;
     }
 
     .hero-content p {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.3;
     }
 
     .hero-buttons {
         flex-direction: row;
         gap: 1rem;
+        justify-content: center;
     }
 
     .cta-button {
-        padding: 1rem 2rem;
-        font-size: 1rem;
+        padding: 0.8rem 1.8rem;
+        font-size: 0.9rem;
+        min-width: 120px;
     }
 
     /* Adjust video controls position */
@@ -1709,6 +2853,151 @@ footer::after {
     .cta-button {
         width: 100%;
         text-align: center;
+    }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+    /* Increase touch targets for mobile devices */
+    .nav-icons a {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cta-button {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .scroll-button {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    .favorite-btn {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    .quick-add {
+        min-height: 44px;
+        padding: 0.8rem 2rem;
+    }
+    
+    .see-more-btn {
+        min-height: 44px;
+    }
+    
+    .back-btn {
+        min-height: 44px;
+    }
+    
+    .submit-btn {
+        min-height: 44px;
+    }
+    
+    /* Improve scrolling performance */
+    .product-grid {
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+    }
+    
+    /* Ensure buttons are always visible on touch devices */
+    .favorite-btn {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .quick-add {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+        margin-top: 100px;
+    }
+    
+    .video-background {
+        height: 70vh;
+    }
+    
+    .hero-content {
+        padding: 1.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        gap: 0.8rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+    
+    .product-card img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .hero-content:hover {
+        transform: none;
+    }
+    
+    .product-card:hover img {
+        transform: none;
+    }
+    
+    .cta-button:hover {
+        transform: none;
+    }
+    
+    .see-more-btn:hover {
+        transform: none;
+    }
+    
+    .back-btn:hover {
+        transform: none;
+    }
+    
+    .submit-btn:hover {
+        transform: none;
     }
 } 
 
@@ -1774,5 +3063,966 @@ footer::after {
 @media (max-width: 768px) {
     .scroll-button {
         display: none !important;
+    }
+} 
+
+/* === Shop Page Styles === */
+.shop-hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 2rem;
+}
+
+.shop-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.category-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.category-links a {
+    background: var(--color-white);
+    color: var(--color-purple-dark);
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.category-links a:hover {
+    background: var(--color-purple-light);
+    color: var(--color-white);
+}
+
+.shop-category {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.shop-category:nth-of-type(even) {
+    background: rgba(96, 63, 103, 0.08);
+}
+
+.shop-category h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    max-width: 1600px;
+    margin: 0 auto;
+} 
+
+/* Overlay backgrounds for shop categories */
+.shop-category.clothes,
+.shop-category.fabric {
+    position: relative;
+    background-image: url('../images/arrivals-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.shop-category.clothes::before,
+.shop-category.fabric::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(0.5px);
+    z-index: 0;
+}
+
+.shop-category.clothes > *,
+.shop-category.fabric > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Section divider (diagonal) */
+.section-divider {
+    width: 100%;
+    height: 80px;
+    background: var(--gradient-secondary);
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+/* Quick-add button revealed on hover */
+.quick-add {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+    background: var(--color-purple-dark);
+    color: var(--color-white);
+    padding: 0.6rem 1.8rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.product-card:hover .quick-add {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+} 
+
+/* Hide prices in New Arrivals homepage slider */
+.collection .product-card .price {
+    display: none;
+}
+
+/* (Optional) store-tools block removed from markup; keeping styles but not used */ 
+
+/* 3x3 Grid for showroom */
+
+.clothes-grid, .fabric-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.clothes-grid .product-card, .fabric-grid .product-card {
+    width: 100%;
+    max-width: 350px;
+    justify-self: center;
+}
+
+/* See More Buttons */
+.see-more-container {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 0;
+}
+
+.see-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, var(--color-purple-dark), var(--color-purple-medium));
+    color: var(--color-white);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(63, 21, 75, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.see-more-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.see-more-btn:hover::before {
+    left: 100%;
+}
+
+.see-more-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(63, 21, 75, 0.4);
+}
+
+.see-more-btn i {
+    transition: transform 0.3s ease;
+}
+
+.see-more-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Clothes and Fabrics Hero Pages */
+.clothes-hero,
+.fabrics-hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient-primary);
+}
+
+.clothes-hero::before,
+.fabrics-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/arrivals-bg.jpg') center/cover;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.clothes-hero .hero-content,
+.fabrics-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.clothes-hero h1,
+.fabrics-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--color-white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.clothes-hero p,
+.fabrics-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.stat:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-white);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-white);
+}
+
+/* All Clothes and Fabrics Sections */
+.all-clothes-section,
+.all-fabrics-section {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.clothes-grid-container,
+.fabrics-grid-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.clothes-grid,
+.fabrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Back to Shop Section */
+.back-to-shop {
+    padding: 3rem 2rem;
+    background: var(--color-purple-light);
+    text-align: center;
+}
+
+.back-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--color-purple-dark);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(63, 21, 75, 0.3);
+}
+
+.back-btn:hover {
+    background: var(--color-purple-medium);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(63, 21, 75, 0.4);
+}
+
+/* Responsive Design for Shop Pages */
+@media (max-width: 1200px) {
+    .shop-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .shop-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+    
+    .clothes-grid,
+    .fabric-grid {
+        gap: 1.5rem;
+    }
+    
+    .clothes-grid .product-card,
+    .fabric-grid .product-card {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .shop-hero {
+        height: 50vh;
+        padding: 1.5rem;
+    }
+    
+    .shop-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .category-links {
+        gap: 0.8rem;
+    }
+    
+    .category-links a {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .shop-category {
+        padding: 3rem 1.5rem;
+    }
+    
+    .shop-category h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .shop-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .clothes-grid,
+    .fabric-grid {
+        gap: 1.2rem;
+    }
+    
+    .clothes-grid .product-card,
+    .fabric-grid .product-card {
+        max-width: 300px;
+    }
+    
+    .see-more-container {
+        margin-top: 2rem;
+        padding: 1.5rem 0;
+    }
+    
+    .see-more-btn {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-hero {
+        height: 35vh;
+        padding: 0.8rem;
+    }
+    
+    .shop-hero h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .category-links {
+        gap: 0.4rem;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .category-links a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+        width: auto;
+        text-align: center;
+    }
+    
+    .shop-category {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .shop-category h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .shop-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.8rem;
+    }
+    
+    .clothes-grid,
+    .fabric-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+    
+    .clothes-grid .product-card,
+    .fabric-grid .product-card {
+        max-width: none;
+    }
+    
+    /* Reduce image sizes on smaller screens */
+    .product-card .product-image-wrapper {
+        padding-bottom: 100%; /* Reduced from 125% */
+    }
+    
+    .product-card img {
+        object-fit: cover;
+    }
+    
+    .see-more-container {
+        margin-top: 1rem;
+        padding: 0.8rem 0;
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .see-more-btn {
+        padding: 0.6rem 1.4rem;
+        font-size: 0.85rem;
+        flex: 0 0 auto;
+    }
+    
+    /* Clothes and Fabrics Hero Pages */
+    .clothes-hero,
+    .fabrics-hero {
+        height: 35vh;
+        padding: 1.2rem 0.8rem;
+    }
+    
+    .clothes-hero h1,
+    .fabrics-hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .clothes-hero p,
+    .fabrics-hero p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-stats {
+        gap: 1rem;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .stat {
+        padding: 0.6rem 0.8rem;
+    }
+    
+    .stat-number {
+        font-size: 1.4rem;
+    }
+    
+    .stat-label {
+        font-size: 0.7rem;
+    }
+    
+    .clothes-grid,
+    .fabrics-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+    
+    .all-clothes-section,
+    .all-fabrics-section {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .back-to-shop {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .back-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .shop-hero {
+        height: 30vh;
+        padding: 0.6rem;
+    }
+    
+    .shop-hero h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .category-links {
+        gap: 0.3rem;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .category-links a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+        width: auto;
+    }
+    
+    .shop-category {
+        padding: 1.2rem 0.6rem;
+    }
+    
+    .shop-category h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .shop-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.6rem;
+    }
+    
+    .clothes-grid,
+    .fabric-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    /* Further reduce image sizes */
+    .product-card .product-image-wrapper {
+        padding-bottom: 85%;
+    }
+    
+    .product-card {
+        max-width: 140px;
+    }
+    
+    .product-info {
+        padding: 0.6rem;
+    }
+    
+    .product-card h3 {
+        font-size: 0.8rem;
+    }
+    
+    .product-card .price {
+        font-size: 0.85rem;
+    }
+    
+    .see-more-container {
+        margin-top: 0.8rem;
+        padding: 0.6rem 0;
+        display: flex;
+        justify-content: center;
+        gap: 0.6rem;
+    }
+    
+    .see-more-btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.8rem;
+        flex: 0 0 auto;
+    }
+    
+    .clothes-hero,
+    .fabrics-hero {
+        height: 30vh;
+        padding: 1rem 0.6rem;
+    }
+    
+    .clothes-hero h1,
+    .fabrics-hero h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .clothes-hero p,
+    .fabrics-hero p {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .hero-stats {
+        gap: 0.8rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .stat {
+        padding: 0.4rem 0.6rem;
+    }
+    
+    .stat-number {
+        font-size: 1.2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.65rem;
+    }
+    
+    .clothes-grid,
+    .fabrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .all-clothes-section,
+    .all-fabrics-section {
+        padding: 1.2rem 0.6rem;
+    }
+    
+    .back-to-shop {
+        padding: 1.2rem 0.6rem;
+    }
+    
+    .back-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-hero {
+        height: 25vh;
+        padding: 0.5rem;
+    }
+    
+    .shop-hero h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .category-links {
+        gap: 0.25rem;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .category-links a {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.65rem;
+        width: auto;
+    }
+    
+    .shop-category {
+        padding: 1rem 0.5rem;
+    }
+    
+    .shop-category h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .shop-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 0.5rem;
+    }
+    
+    .clothes-grid,
+    .fabric-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem;
+    }
+    
+    /* Even smaller images */
+    .product-card .product-image-wrapper {
+        padding-bottom: 80%;
+    }
+    
+    .product-card {
+        max-width: 120px;
+    }
+    
+    .product-info {
+        padding: 0.5rem;
+    }
+    
+    .product-card h3 {
+        font-size: 0.75rem;
+    }
+    
+    .product-card .price {
+        font-size: 0.8rem;
+    }
+    
+    .see-more-container {
+        margin-top: 0.6rem;
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .see-more-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.75rem;
+        flex: 0 0 auto;
+    }
+    
+    .clothes-hero,
+    .fabrics-hero {
+        height: 25vh;
+        padding: 0.8rem 0.5rem;
+    }
+    
+    .clothes-hero h1,
+    .fabrics-hero h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .clothes-hero p,
+    .fabrics-hero p {
+        font-size: 0.75rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .hero-stats {
+        gap: 0.6rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .stat {
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .stat-number {
+        font-size: 1rem;
+    }
+    
+    .stat-label {
+        font-size: 0.6rem;
+    }
+    
+    .clothes-grid,
+    .fabrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+    
+    .all-clothes-section,
+    .all-fabrics-section {
+        padding: 1rem 0.5rem;
+    }
+    
+    .back-to-shop {
+        padding: 1rem 0.5rem;
+    }
+    
+    .back-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .shop-hero {
+        height: 20vh;
+        padding: 0.4rem;
+    }
+    
+    .shop-hero h1 {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .category-links {
+        gap: 0.2rem;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .category-links a {
+        width: auto;
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+    }
+    
+    .shop-category {
+        padding: 0.8rem 0.4rem;
+    }
+    
+    .shop-category h2 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .shop-grid {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        gap: 0.3rem;
+    }
+    
+    .clothes-grid,
+    .fabric-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.3rem;
+    }
+    
+    /* Smallest images */
+    .product-card .product-image-wrapper {
+        padding-bottom: 75%;
+    }
+    
+    .product-card {
+        max-width: 100px;
+    }
+    
+    .product-info {
+        padding: 0.4rem;
+    }
+    
+    .product-card h3 {
+        font-size: 0.7rem;
+    }
+    
+    .product-card .price {
+        font-size: 0.75rem;
+    }
+    
+    .see-more-container {
+        margin-top: 0.5rem;
+        padding: 0.4rem 0;
+        display: flex;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+    
+    .see-more-btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+        flex: 0 0 auto;
+    }
+    
+    .clothes-hero,
+    .fabrics-hero {
+        height: 20vh;
+        padding: 0.6rem 0.4rem;
+    }
+    
+    .clothes-hero h1,
+    .fabrics-hero h1 {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .clothes-hero p,
+    .fabrics-hero p {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-stats {
+        gap: 0.4rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .stat {
+        padding: 0.2rem 0.4rem;
+    }
+    
+    .stat-number {
+        font-size: 0.9rem;
+    }
+    
+    .stat-label {
+        font-size: 0.55rem;
+    }
+    
+    .clothes-grid,
+    .fabrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .all-clothes-section,
+    .all-fabrics-section {
+        padding: 0.8rem 0.4rem;
+    }
+    
+    .back-to-shop {
+        padding: 0.8rem 0.4rem;
+    }
+    
+    .back-btn {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.7rem;
     }
 } 

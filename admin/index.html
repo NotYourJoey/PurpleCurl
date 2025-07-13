@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Curl Admin</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Admin Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/pc-logo.png" alt="Purple Curl Logo" /></a>
+            </div>
+                    <div class="nav-icons">
+            <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="../shop/"><i class="fas fa-store"></i> Shop</a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Admin Header -->
+    <header class="admin-hero">
+        <h1>Purple Curl Admin Panel</h1>
+        <p>Manage your shop products and images</p>
+    </header>
+
+    <!-- Admin Dashboard -->
+    <div class="admin-container">
+        <!-- Product Management -->
+        <section class="admin-section">
+            <h2><i class="fas fa-tshirt"></i> Product Management</h2>
+            
+            <!-- Add New Product Form -->
+            <div class="form-container">
+                <h3>Add New Product</h3>
+                <form id="addProductForm" class="admin-form">
+                    <div class="form-group">
+                        <label for="productName">Product Name:</label>
+                        <input type="text" id="productName" name="productName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productPrice">Price:</label>
+                        <input type="text" id="productPrice" name="productPrice" placeholder="e.g., $150.00" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productCategory">Category:</label>
+                        <select id="productCategory" name="productCategory" required>
+                            <option value="">Select Category</option>
+                            <option value="clothes">Clothes</option>
+                            <option value="fabric">Fabric</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productImage">Product Image:</label>
+                        <input type="file" id="productImage" name="productImage" accept="image/*" required>
+                        <div class="image-preview" id="imagePreview"></div>
+                    </div>
+                    
+                    <button type="submit" class="admin-btn">
+                        <i class="fas fa-plus"></i> Add Product
+                    </button>
+                </form>
+            </div>
+
+            <!-- Current Products -->
+            <div class="products-container">
+                <h3>Current Products</h3>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Management -->
+        <section class="admin-section">
+            <h2><i class="fas fa-images"></i> Image Management</h2>
+            
+            <div class="image-upload-container">
+                <h3>Upload New Images</h3>
+                <form id="uploadImagesForm" class="admin-form">
+                    <div class="form-group">
+                        <label for="imageFiles">Select Images:</label>
+                        <input type="file" id="imageFiles" name="imageFiles" accept="image/*" multiple>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="imageCategory">Image Category:</label>
+                        <select id="imageCategory" name="imageCategory" required>
+                            <option value="">Select Category</option>
+                            <option value="gallery">Gallery (Clothes)</option>
+                            <option value="fabric">Fabric</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="admin-btn">
+                        <i class="fas fa-upload"></i> Upload Images
+                    </button>
+                </form>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="image-gallery">
+                <h3>Image Gallery</h3>
+                <div class="gallery-tabs">
+                    <button class="tab-btn active" data-category="gallery">Gallery Images</button>
+                    <button class="tab-btn" data-category="fabric">Fabric Images</button>
+                </div>
+                <div class="gallery-grid" id="imageGallery">
+                    <!-- Images will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Update -->
+        <section class="admin-section">
+            <h2><i class="fas fa-sync"></i> Shop Update</h2>
+            
+            <div class="update-container">
+                <h3>Update Shop</h3>
+                <p>Click the button below to regenerate the shop with current products:</p>
+                <button id="updateShopBtn" class="admin-btn">
+                    <i class="fas fa-sync"></i> Update Shop
+                </button>
+                
+                <div class="update-status" id="updateStatus"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Admin Panel</h3>
+                <p>Purple Curl Shop Management</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="../index.html">Home</a><br/>
+                <a href="../shop/">Shop</a><br/>
+                <a href="./">Admin</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Purple Curl. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html> 
