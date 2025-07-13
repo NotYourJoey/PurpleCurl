@@ -7,8 +7,6 @@ const videoSources = [
 ];
 
 const videoFrames = document.querySelectorAll('.video-frame');
-const prevButton = document.querySelector('.prev-video');
-const nextButton = document.querySelector('.next-video');
 
 // Initialize starting indices for each frame
 let currentIndices = [0, 1, 2];
@@ -109,30 +107,7 @@ let autoShuffleInterval = setInterval(() => {
     changeVideos('shuffle');
 }, 20000);
 
-// Event listeners for manual navigation
-if (prevButton && nextButton) {
-    prevButton.addEventListener('click', () => {
-        if (!isTransitioning) {
-            changeVideos(-1);
-            // Reset auto shuffle timer
-            clearInterval(autoShuffleInterval);
-            autoShuffleInterval = setInterval(() => {
-                changeVideos('shuffle');
-            }, 20000);
-        }
-    });
-
-    nextButton.addEventListener('click', () => {
-        if (!isTransitioning) {
-            changeVideos(1);
-            // Reset auto shuffle timer
-            clearInterval(autoShuffleInterval);
-            autoShuffleInterval = setInterval(() => {
-                changeVideos('shuffle');
-            }, 20000);
-        }
-    });
-}
+// Manual navigation removed - videos now auto-shuffle only
 
 // Handle video quality
 function setVideoQuality(video) {
